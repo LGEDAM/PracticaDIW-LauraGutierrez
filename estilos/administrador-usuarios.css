@@ -1,0 +1,389 @@
+/* Opcion seleccionada - Usuarios*/
+.opciones li:nth-of-type(1) a {
+    letter-spacing: 0.2em;
+    /*Damos sombra al enlace*/
+    text-shadow: -1px -1px 2px var(--azul-oscuro), 
+                2px 2px 2px var(--azul-oscuro),
+                4px 4px 4px var(--azul-oscuro),
+                5px 5px 5px var(--azul-oscuro),
+                6px 6px 6px var(--azul-oscuro), 
+                7px 7px 7px var(--azul-oscuro);
+}
+
+/*----------------------------CUERPO DE PAGINA--------------------------------*/
+main {
+    margin: 3em 1.5em;
+}
+
+/*Titulo de pagina*/
+main h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.2em;
+    margin-right: 20%;
+    margin-bottom: 1.5em;
+}
+
+/* Parte superior (buscador-filtros)*/
+main div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin: 1.5em 0;
+}
+
+/*Form - buscador*/
+main div:first-of-type form {
+    width: 100%;
+}
+
+/*Buscador*/
+main div:first-of-type input {
+    padding: 0.6em 0.5em;
+    width: 100%;
+    border: 1.2px solid var(--azul-oscuro);
+    border-radius: 0.8em;
+}
+
+/*Buscador focus*/
+main div:first-of-type input:focus {
+    outline: none !important;
+    border: 1px solid var(--azul-oscuro);
+    box-shadow: 0 0 20px var(--azul-claro);
+}
+
+/*Filtro - Iconos*/
+main div:first-of-type a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.6em;
+    margin-left: 1.5em;
+    color: var(--azul-oscuro);
+
+}
+
+main div:first-of-type a:hover {
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.4);
+    border-radius: 0.4em;
+}
+
+/*Icono filtro*/
+main div:first-of-type svg {
+    width: 20px;
+}
+
+/*Icono fecha*/
+main div:first-of-type svg:nth-of-type(2) {
+    width: 5px;
+    height: auto;
+    margin-left: 0.2em;
+}
+
+/*Tabla*/
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+/*Filas*/
+tbody tr {
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+/*Celdas*/
+tbody td {
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    padding-bottom: 1em;
+
+}
+
+td::before {
+    color: var(--azul-oscuro);
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+/*Nombre de las celdas*/
+tr td:nth-child(2)::before {
+    content: "DNI: ";
+}
+
+tr td:nth-child(3)::before {
+    content: "Nombre: ";
+}
+
+tr td:nth-child(4)::before {
+    content: "Apellidos: ";
+}
+
+tr td:nth-child(5)::before {
+    content: "Email: ";
+}
+
+tr td:nth-child(6)::before {
+    content: "Dirección: ";
+}
+
+tr td:nth-child(7)::before {
+    content: "Telefono: ";
+}
+
+/*Ocultar cabecera tabla*/
+thead {
+    display: none;
+}
+
+/*Icono tipo*/
+tr td:nth-child(1) {
+    padding: 2em 0 1.5em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+tr td:nth-child(1) svg {
+    width: 40px;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+tr:hover svg {
+    background-color: var(--azul-claro);
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.7);
+}
+
+/*Icono papelera*/
+tr td:last-of-type svg {
+    display: none;
+}
+
+/*Color filas pares*/
+tbody tr:nth-of-type(even) {
+    background-color: var(--gris-claro);
+}
+
+/*Ultima fila*/
+tbody tr:last-of-type {
+    border-bottom: 2px solid var(--azul-oscuro);
+}
+
+/*Hover filas*/
+tbody tr:hover {
+    font-weight: bold;
+}
+
+/*Hover icono*/
+tbody tr:hover td:first-of-type {
+    transform: scale(1.2);
+}
+
+/*Mostrar boton eliminar*/
+.eliminar {
+    display: block;
+}
+
+/*Estilo boton eliminar*/
+.eliminar {
+    background-color: var(--azul-oscuro);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.95;
+    font-size: 0.8em;
+    font-family: "BreeSerif", serif;
+    font-weight: normal;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0.7em;
+    width: 200px;
+    margin: 1em 0;
+    letter-spacing: 0.2em;
+}
+
+/*Botones*/
+main div:last-of-type {
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilo botones*/
+main div button {
+    background-color: var(--azul-oscuro);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.95;
+    font-size: 0.8em;
+    font-family: "BreeSerif", serif;
+    font-weight: normal;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0.6em;
+    width: 3em;
+    margin-left: 0.5em;
+}
+
+/*Hover botones*/
+main div button:hover,
+tr:hover .eliminar {
+    color: var(--ocre);
+    opacity: 1;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/*-------------------------------VERSION ESCRITORIO------------------------------------------*/
+@media only screen and (min-width: 650px) {
+
+    main {
+        margin: 3em 12%;
+    }
+
+    /*Titulo de pagina*/
+    main h2 {
+        margin-right: 50%;
+    }
+
+    /* Parte superior (buscador-filtros)*/
+    main div:first-of-type {
+        justify-content: flex-end;
+    }
+
+    /*Buscador*/
+    main div:first-of-type input {
+        width: 30%;
+    }
+
+    /*Buscador focus*/
+    main div:first-of-type input:focus {
+        box-shadow: 0 0 9px var(--azul-claro);
+    }
+
+    /*Filtro - Iconos*/
+    main div:first-of-type a {
+        margin-left: 0.6em;
+        margin-right: 0.2em;
+    }
+
+    /*Botones*/
+    main div:last-of-type {
+        justify-content: flex-end;
+    }
+
+    /*Mostrar la cabecera de la tabla*/
+    thead {
+        display: table-header-group;
+    }
+
+    /*Cebecera tabla*/
+    thead tr {
+        background-color: var(--azul-oscuro);
+        color: white;
+        text-align: left;
+    }
+
+    /*Filas*/
+    tr {
+        height: 58px;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid var(--gris-claro);
+    }
+
+    /*Celdas*/
+    th {
+        font-weight: normal;
+        font-family: "BreeSerif", serif;
+        letter-spacing: 0.1em;
+        font-style: normal;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    /*Celdas tipo y baja*/
+    th:first-of-type,
+    th:last-of-type {
+        padding: 0 0.5em;
+    }
+   
+    tbody td {
+        display: table-cell;
+        padding: 0.3em 1% !important;
+        text-align: center;
+    }
+
+    /*Fila papelera centrar*/
+    tr td:last-of-type {
+        text-align: center;
+    }
+
+    /*Iconos tabla*/
+    table svg {
+        width: 20px;
+    }
+
+    /*Hover papelera e icono*/
+    tbody tr:hover td:last-of-type {
+        transform: scale(1.2);    
+    }
+
+    /*Icono tipo*/
+    tr td:nth-child(1) {
+        padding: 2em 0 1.5em 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    tr td:nth-child(1) svg {
+        width: 20px;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    tr:hover svg {
+        background-color: transparent;
+    }
+
+    /*Ocultar texto*/
+    td::before {
+        display: none;
+    }
+
+    /*Ocultar boton eliminar*/
+    .eliminar {
+        display: none;
+    }
+
+    /*Mostrar icono tipo y papelera*/
+    tr td:nth-child(1){
+        padding: 1em 0 !important;
+        display: block;
+    }
+
+    /*Icono papelera*/
+    tr td:last-of-type svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/*--------------------VERSION TABLET (reducir el margen para ver la info de la tabla)----------------------*/
+@media only screen and (max-width: 850px) {
+    main {
+        margin: 3em 5%;
+    }
+}

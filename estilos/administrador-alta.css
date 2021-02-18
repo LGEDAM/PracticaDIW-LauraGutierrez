@@ -1,0 +1,319 @@
+/* Opcion seleccionada - Dar Alta*/
+.opciones li:nth-of-type(2) a {
+    letter-spacing: 0.2em;
+    /*Damos sombra al enlace*/
+    text-shadow: -1px -1px 2px var(--azul-oscuro), 
+                2px 2px 2px var(--azul-oscuro),
+                4px 4px 4px var(--azul-oscuro),
+                5px 5px 5px var(--azul-oscuro),
+                6px 6px 6px var(--azul-oscuro), 
+                7px 7px 7px var(--azul-oscuro);
+}
+
+/*----------------------------CUERPO DE PAGINA--------------------------------*/
+main {
+    margin: 3em 1.5em;
+}
+
+/*Titulo de pagina, tipo de usuario*/
+main h2,
+h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.2em;
+    margin-right: 20%;
+    margin-bottom: 1.5em;
+}
+
+/*Titulo tipo de usuario (alumno-profesor)*/
+main h3 {
+    margin-top: 1.5em;
+    margin-right: 0;
+}
+
+/*Formulario*/
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+main li {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Inputs*/
+main li input {
+    box-sizing: border-box;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid var(--azul-oscuro);
+    height: 12%;
+    font: 400 0.9em "Lato";
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1em;
+}
+
+/*Input focus*/
+main li input:focus {
+    outline: none !important;
+    border: 1px solid var(--azul-oscuro);
+    box-shadow: 0 0 9px var(--azul-claro);
+}
+
+/*Input direccion*/
+#direccion {
+    width: 100%;
+}
+
+/*Opciones radio*/
+main input[type="radio"] {
+    visibility: hidden;
+    width: 13%;
+    height: 6%;
+    position: absolute;
+    margin: 0;
+}
+
+main div input[type="radio"]:nth-of-type(2) {
+    transform: translateX(90%);
+}
+
+/*Opciones radio*/
+main li div {
+    text-align: center;
+    margin: 0;
+    border: 1px solid var(--azul-oscuro);
+    font: 400 0.9em "Lato";
+    display: flex;
+    width: 99.5%;
+    margin-bottom: 1em;
+}
+
+.labelRadio {
+    width: 50%;
+    margin: 0;
+    padding: 0.7em 0;
+    border-left: 1px solid var(--azul-oscuro);
+}
+
+div .labelRadio:first-of-type {
+    border-left: none;
+}
+
+.labelRadio:hover {
+    background-color: var(--azul-oscuro) !important;
+    color: var(--ocre) !important;
+}
+
+/*Cursos*/
+#opcionesCursos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
+    margin:0.8em 0;
+}
+
+/*Nombre cursos*/
+#opcionesCursos label {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-bottom: 1em;
+}
+
+/*Check cursos*/
+input[type="checkbox"] {
+    margin-right: 0.8em;
+    transform: scale(1.2);
+}
+
+input[type="checkbox"]:checked {
+    border-color: transparent;
+    animation: checkBox 1s linear;
+}
+
+/*Animacion checkBox*/
+@keyframes checkBox {
+    from {
+        transform: scale(1.2, 1.2);
+    }
+
+    30% {
+        transform: scale(1.75, 1.05);
+    }
+
+    40% {
+        transform: scale(1.05, 1.75);
+    }
+
+    50% {
+        transform: scale(1.75, 1.15);
+    }
+
+    65% {
+        transform: scale(1.25, 1.45);
+    }
+
+    75% {
+        transform: scale(1.45, 1.25);
+    }
+
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+/*Modulos*/
+fieldset:not(:last-of-type) {
+    margin-bottom: 1.5em;
+    background-color: var(--gris-claro);
+}
+
+.modulo fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+    padding: 0;
+}
+
+/*Leyenda modulo*/
+.modulo legend {
+    font-weight: bold;
+}
+
+/*Nombre modulo*/
+.modulo label {
+    padding: 0.5em 0;
+}
+
+/*Instrucciones*/
+main p {
+    margin: 0.4em;
+    font-size: 0.75em;
+    opacity: 0.9;
+}
+
+main p:first-of-type {
+    margin-top: 3em;
+}
+
+/*Botones - Vaciar | Aceptar*/
+.botones {
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 3em;
+}
+
+/*Estilo botones*/
+button {
+    background-color: var(--azul-oscuro);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.95;
+    font-size: 0.8em;
+    font-family: "BreeSerif", serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding: 0.9em;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 250px;
+    margin-bottom: 1.5em;
+}
+/*Botones hover*/
+button:hover {
+    color: var(--ocre);
+    opacity: 1;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/*----------------------------------VERSION ESCRITORIO------------------------------------------*/
+@media only screen and (min-width: 650px) {
+
+    main {
+        margin: 3em 12%;
+    }
+
+    /*Titulo de pagina, tipo de usuario*/
+    main h2,
+    h3 {
+        margin-right: 50%;
+    }
+
+    /*Titulo tipo de usuario (alumno-profesor)*/
+    main h3 {
+        margin-right: 1em;
+    }
+
+    /*Formulario*/
+    main li {
+        margin: 1em 0;
+        flex-direction: row;
+    }
+
+    /*Input*/
+    main li input {
+        width: 36%;
+        margin-right: 1em;
+        margin-bottom: 0em;
+    }
+
+    /*Opciones radio*/
+    main li div {
+        margin: 0;
+        margin-right: 1em;
+        width: 36%;
+    }
+    ul li:nth-of-type(3){
+        width: 100%;
+    }
+    /*Input direccion*/
+    #direccion {
+        width: 74.4%;
+    }
+    #nacion{
+        width: 36%;
+    }
+
+    /*Cursos*/
+    #opcionesCursos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin:1em 2%;
+        grid-gap: 0.4em;
+    }
+
+    /*Modulos*/
+    .modulo fieldset {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        
+    }
+
+    /*Botones*/
+    .botones {
+        text-align: right;
+        margin: 3em 1em 5em 0;
+    }
+
+    /*Estilo boton*/
+    button {
+        margin-left: 1.5em;
+        margin-bottom: 0;
+        width: 150px;
+    }
+}
+
+/*--------------------VERSION TABLET (reducir el margen)----------------------*/
+@media only screen and (max-width: 850px) {
+    main {
+        margin: 3em 5%;
+    }
+}

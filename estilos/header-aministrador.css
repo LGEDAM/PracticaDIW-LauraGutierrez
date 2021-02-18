@@ -1,0 +1,210 @@
+/*CABECERA*/
+header {
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo + identificacion*/
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em 1% 0.2em 5%;
+    align-items: center;
+}
+
+/* Identificacion (nombre+iconos)*/
+.identificar {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    height: 50px;
+    width: 55px;
+    margin-right: 0.4em;
+}
+
+.identificar:hover {
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.15);
+    border-radius: 0.4em;
+}
+
+
+/* Nombre del administrador*/
+.identificar p {
+    display: none;
+}
+
+/*Icono identificacion*/
+header svg:nth-of-type(1) {
+    width: 25px;
+    margin-left: 0.9em;
+}
+
+/*Icono flecha*/
+header svg:nth-of-type(2) {
+    width: 5px;
+    height: auto;
+    margin-left: 0.4em;
+}
+
+/* NAVEGACION */
+header nav {
+    background-color: var(--azul);
+}
+
+/* Lista */
+header ul {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+/* Opcion Administrador*/
+header nav li {
+    width: 100%;
+    text-align: center;
+}
+
+/* Opcion Administrador enlace */
+header nav li a {
+    display: flex;
+    text-decoration: none;
+    color: var(--gris-claro);
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5em;
+    margin: 0.5em 15% 0 15%;
+    font-family: "BreeSerif", serif;
+    letter-spacing: 0.3em;
+    font-size: 1.2em;
+    border-bottom: solid 1px var(--gris-claro);
+}
+
+/* Opciones navegacion - nav*/
+.opciones {
+    padding: 0.2em 4%;
+}
+
+/* Opciones navegacion*/
+.opciones li {
+    margin: 0.4em 0;
+    padding: 0 0.5em;
+    border-right: solid 1px var(--gris-claro);
+}
+
+/* Opciones enlaces - alta  | gestionar */
+.opciones a {
+    display: flex;
+    text-decoration: none;
+    color: var(--gris-claro);
+    align-items: center;
+    justify-content: center;
+    min-height: 1.5em;
+    margin: 0.1em 0;
+    padding: 0.4em 0;
+    font-family: "BreeSerif", sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    border-bottom: none;
+    height: 70%;
+
+}
+
+.opciones a:hover {
+    letter-spacing: 0.2em;
+    /*Damos sombra al enlace*/
+    text-shadow: -1px -1px 2px var(--azul-oscuro), 
+                2px 2px 2px var(--azul-oscuro),
+                4px 4px 4px var(--azul-oscuro),
+                5px 5px 5px var(--azul-oscuro),
+                6px 6px 6px var(--azul-oscuro), 
+                7px 7px 7px var(--azul-oscuro);
+}
+
+/* Opcion - Dar de alta */
+.opciones li:nth-of-type(2) {
+    border-right: none;
+}
+
+/*--------------------------------VERSION ESCRITORIO--------------------------------------*/
+@media only screen and (min-width: 650px) {
+
+    /* CABECERA */
+    /* Logo + identificacion*/
+    header div {
+        padding: 0.2em 10%;
+    }
+
+    header div div {
+        padding: 0;
+    }
+
+    /* Imagen logo */
+    header div img {
+        padding-left: 0.9em;
+    }
+
+    header div div a:nth-of-type(2) {
+        padding-left: 0;
+        margin: 0.8em 0;
+    }
+
+    /* Identificacion*/
+    .identificar {
+        display: flex;
+        text-decoration: none;
+        font-family: "BreeSerif", serif;
+        color: black;
+        margin: auto 0;
+        padding: 0 0.8em;
+        letter-spacing: 0.1em;
+        word-spacing: 0.3em;
+        font-size: 0.95em;
+        height: auto;
+        width: auto;
+        margin-right: 0;
+    }
+
+    /* Nombre del administrador*/
+    .identificar p {
+        display: block;
+    }
+
+    /*Icono identificacion*/
+    header svg:nth-of-type(1) {
+        width: 22px;
+    }
+
+    /*Icono mensaje*/
+    header div div a:nth-of-type(2) {
+        margin: 0;
+        padding: 1em;
+    }
+
+    header div div a:nth-of-type(2) svg {
+        margin-left: 0;
+    }
+
+    /* NAVEGACION */
+    /* Opcion administrador borde*/
+    header nav li a {
+        border-bottom: solid 2px var(--gris-claro);
+        margin: 0.5em 28% 0 28%;
+    }
+
+    .opciones {
+        padding: 0.2em 10%;
+    }
+
+    /* Opciones borde*/
+    .opciones li {
+        border-right: solid 2px var(--gris-claro);
+    }
+
+}

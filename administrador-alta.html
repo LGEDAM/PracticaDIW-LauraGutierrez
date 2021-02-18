@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono-->
+    <link rel="shortcut icon" href="media/imagenes/icono.png" />
+    <!--Estilos-->
+    <link rel="stylesheet" href="estilos/fuentesColores.css">
+    <link rel="stylesheet" href="estilos/clear.css">
+    <link rel="stylesheet" href="estilos/administrador-alta.css">
+    <!--Estilos de header-admin (cabecera)-->
+    <link rel="stylesheet" href="estilos/header-aministrador.css">
+    <!--Estilos de footer-paginas (pie de pagina)-->
+    <link rel="stylesheet" href="estilos/footer-paginas.css">
+    <!--Titulo pagina-->
+    <title>Administrador - Dar Alta | C.I.F.P Laura I</title>
+    <!--Scripts de los elementos personalizados-->
+    <script src="custom/header-administrador.js"></script>
+    <script src="custom/footer-paginas.js"></script>
+    <!--Scripts codigo-->
+    <script src="codigo/administrador.js"></script>
+</head>
+
+<body>
+    <!--Cabecera -->
+    <header-admin></header-admin>
+    <!--Cuerpo de página-->
+    <main>
+        <h2>Alta usuario</h2>
+        <!--Formulario-->
+        <form autocomplete="off">
+            <!--Informacion nuevo usuario-->
+            <ul>
+                <li>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" placeholder="Nombre*">
+                    <label for="apellido1"></label>
+                    <input type="text" id="apellido1" placeholder="Apellido 1*">
+                    <label for="apellido2"></label>
+                    <input type="text" id="apellido2" placeholder="Apellido 2*">
+                </li>
+                <li>
+                    <input type="text" id="dni" placeholder="DNI*">
+                    <input type="text" id="fechaNac" placeholder="Fecha de nacimiento*">
+                    <div>
+                        <label for="sexo-m" class="labelRadio" id="mujer">Mujer</label>
+                        <input type="radio" name="sexo" id="sexo-m" value="mujer" onchange="opcionSexo(this)">
+                        <label for="sexo-v" class="labelRadio" id="hombre">Hombre</label>
+                        <input type="radio" name="sexo" id="sexo-v" value="hombre" onchange="opcionSexo(this)">
+                    </div>
+
+                </li>
+                <li>
+                    <input type="text" id="direccion" placeholder="Dirección*">
+                    <input type="text" id="nacion" placeholder="Nacionalidad*">
+                </li>
+                <li>
+                    <input type="email" id="email" placeholder="Email*">
+                    <input type="tel" id="tel" placeholder="Teléfono*">
+                    <div>
+                        <label for="tipo-a" class="labelRadio" id="alum">Alumno</label>
+                        <input type="radio" name="tipo" id="tipo-a" value="alumno" onchange="opcionAlumnoProf(this)">
+                        <label for="tipo-p" class="labelRadio" id="prof">Profesor</label>
+                        <input type="radio" name="tipo" id="tipo-p" value="profesor" onchange="opcionAlumnoProf(this)">
+                    </div>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+
+            <!--Tipo de usuario (profesor-alumno)-->
+            <h3 id="tipoUsuario"></h3>
+
+            <!--Cursos elegir (DAW-DAM-ASIR)-->
+            <div id="opcionesCursos">
+                <label>
+                    <input type="checkbox" name="curso" id="daw" onchange="mostrarModulos(this)">
+                    Desarrollo de aplicaciones web
+                </label>
+                <label>
+                    <input type="checkbox" name="curso" id="asir" onchange="mostrarModulos(this)">
+                    Administración de Sistemas Informáticos en Red
+                </label>
+                <label>
+                    <input type="checkbox" name="curso" id="dam" onchange="mostrarModulos(this)">
+                    Desarrollo de aplicaciones multimedia
+                </label>
+                <label>
+                    <input type="checkbox" name="curso" id="smr" onchange="mostrarModulos(this)">
+                    Sistemas Microinformáticos y Redes
+                </label>
+                
+            </div>
+
+            <!--DAW-->
+            <fieldset id="modulo-daw" class="modulo">
+                <legend>DAW</legend>
+                <fieldset>
+                    <label><input type="checkbox" name="daw" value="daw-pr"> Programación</label>
+                    <label><input type="checkbox" name="daw" value="daw-si"> Sistemas informáticos</label>
+                    <label><input type="checkbox" name="daw" value="daw-bd"> Bases de datos</label>
+                    <label><input type="checkbox" name="daw" value="daw-lm"> Lenguaje de marcas</label>
+                    <label><input type="checkbox" name="daw" value="daw-ed"> Entornos de desarrollo</label>
+                    <label><input type="checkbox" name="daw" value="daw-fol"> Formación y orientación
+                        laboral</label>
+                    <label><input type="checkbox" name="daw" value="daw-daw"> Despliegue de aplicaciones web</label>
+                    <label><input type="checkbox" name="daw" value="daw-des"> Desarrollo web en entorno
+                        cliente</label>
+                    <label><input type="checkbox" name="daw" value="daw-dec"> Desarrollo web en entorno
+                        servidor</label>
+                    <label><input type="checkbox" name="daw" value="daw-diw"> Diseño de interfaces web</label>
+                    <label><input type="checkbox" name="daw" value="daw-eie"> Empresa e iniciativa
+                        emprendedora</label>
+                </fieldset>
+            </fieldset>
+
+            <!--DAM-->
+            <fieldset id="modulo-dam" class="modulo">
+                <legend>DAM</legend>
+                <fieldset>
+                    <label><input type="checkbox" name="dam" value="dam-pr"> Programación</label>
+                    <label><input type="checkbox" name="dam" value="dam-si"> Sistemas informáticos</label>
+                    <label><input type="checkbox" name="dam" value="dam-bd"> Bases de datos</label>
+                    <label><input type="checkbox" name="dam" value="dam-lm"> Lenguaje de marcas</label>
+                    <label><input type="checkbox" name="dam" value="dam-ed"> Entornos de desarrollo</label>
+                    <label><input type="checkbox" name="dam" value="dam-fol"> Formación y orientación laboral</label>
+                    <label><input type="checkbox" name="dam" value="dam-ad"> Acceso a datos</label>
+                    <label><input type="checkbox" name="dam" value="dam-di"> Desarrollo de interfaces</label>
+                    <label><input type="checkbox" name="dam" value="dam-psp"> Programación de servicios y
+                        procesos</label>
+                    <label><input type="checkbox" name="dam" value="dam-pmm"> Programación multimedia y dispositivos
+                        móviles</label>
+                    <label><input type="checkbox" name="dam" value="dam-sge"> Sistemas de gestión empresarial</label>
+                    <label><input type="checkbox" name="dam" value="dam-eie"> Empresa e iniciativa emprendedora</label>
+                </fieldset>
+            </fieldset>
+
+            <!--ASIR-->
+            <fieldset id="modulo-asir" class="modulo">
+                <legend>ASIR</legend>
+                <fieldset>
+                    <label><input type="checkbox" name="asir" value="asir-iso"> Implantación de Sistemas
+                        Operativos</label>
+                    <label><input type="checkbox" name="asir" value="asir-par"> Planificación y Administrador de
+                        Redes</label>
+                    <label><input type="checkbox" name="asir" value="asir-fh"> Fundamentos de Hardware</label>
+                    <label><input type="checkbox" name="asir" value="asir-gbd"> Gestión de Bases de Datos</label>
+                    <label><input type="checkbox" name="asir" value="asir-lm"> Lenguajes de Marcas y Sistemas de Gestión
+                        de Información</label>
+                    <label><input type="checkbox" name="asir" value="asir-fol"> Formación y orientación laboral</label>
+                    <label><input type="checkbox" name="asir" value="asir-aso"> Administración de Sistemas
+                        Operativos</label>
+                    <label><input type="checkbox" name="asir" value="asir-sri"> Servicios de Red e Internet</label>
+                    <label><input type="checkbox" name="asir" value="asir-iaw"> Implantación de Aplicaciones Web</label>
+                    <label><input type="checkbox" name="asir" value="asir-asgbd"> Administración de Sistemas Gestores de
+                        Bases de Datos</label>
+                    <label><input type="checkbox" name="asir" value="asir-sad"> Seguridad y Alta Disponibilidad</label>
+                    <label><input type="checkbox" name="asir" value="asir-eie"> Empresa e iniciativa
+                        emprendedora</label>
+                </fieldset>
+            </fieldset>
+
+            <!--SMR-->
+            <fieldset id="modulo-smr" class="modulo">
+                <legend>SMR</legend>
+                <fieldset>
+                    <label><input type="checkbox" name="smr" value="smr-som"> Sistemas operativos monopuesto</label>
+                    <label><input type="checkbox" name="smr" value="smr-ao"> Aplicaciones ofimáticas</label>
+                    <label><input type="checkbox" name="smr" value="smr-rl"> Redes locales</label>
+                    <label><input type="checkbox" name="smr" value="smr-aw"> Aplicaciones web</label>
+                    <label><input type="checkbox" name="smr" value="smr-fol"> Formación y orientación laboral</label>
+                    <label><input type="checkbox" name="smr" value="smr-mme"> Montaje y mantenimiento de equipos</label>
+                    <label><input type="checkbox" name="smr" value="smr-sor"> Sistemas operativos en red</label>
+                    <label><input type="checkbox" name="smr" value="smr-se"> Seguridad informática</label>
+                    <label><input type="checkbox" name="smr" value="smr-sr"> Servicios en red</label>
+                    <label><input type="checkbox" name="smr" value="smr-eie"> Empresa e iniciativa emprendedora</label>
+                </fieldset>
+            </fieldset>
+
+            <!--Instrucciones formulario-->
+            <p>Los campos con el símbolo (*) son obligatorios.</p>
+            <p>Pulsando sobre la opción <b>Alumno</b> o <b>Profesor</b> se muestran los cursos disponibles a asignar.</p>
+            <p>A un alumno <b>sólo</b> se le puede asignar un curso y del mismo varios módulos.</p>
+            <p>A un profesor se le pueden asignar varios cursos y módulos.</p>
+
+            <!--Botones (Vaciar - Añadir)-->
+            <fieldset class="botones">
+                <button type="reset" id="vaciar">Vaciar</button>
+                <button type="button">Añadir usuario</button>
+            </fieldset>
+        </form>
+    </main>
+    <!--Pie de página-->
+    <footer-paginas></footer-paginas>
+</body>
+
+</html>

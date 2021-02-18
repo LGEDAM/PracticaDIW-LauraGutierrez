@@ -1,0 +1,140 @@
+/*PIE DE PAGINA*/
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--gris-claro);
+    padding: 2em 10% 3em 10%;
+    font-size: 0.75em;
+    font-family: "Lato";
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+}
+
+/*Nombre del centro*/
+footer p:nth-of-type(1) {
+    grid-area: "nombre";
+    border-right: 1px solid var(--gris-claro);
+}
+
+/*Telefono del centro*/
+footer p:nth-of-type(2) {
+    grid-area: "tel";
+}
+
+/*Email del centro*/
+footer p:nth-of-type(3) {
+    grid-area: "email";
+    border-right: 1px solid var(--gris-claro);
+}
+
+/*Direccion del centro*/
+footer address {
+    font-style: normal;
+    grid-area: "address";
+}
+
+/*Informacion del centro*/
+footer>div:first-of-type {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nombre tel"
+        "email address";
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*Parte enlaces*/
+.enlaces {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+/*Enlaces de imagenes*/
+.enlaces div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+
+/*Imagen Junta de Castilla y Leon*/
+.enlaces a:nth-of-type(1) img {
+    height: 60px;
+    width: auto;
+    margin: 0.5em 0.5em;
+}
+
+/*Imagen Gobierno de España*/
+.enlaces a:nth-of-type(2) img {
+    height: 50px;
+    width: auto;
+}
+
+/*Copyright*/
+footer small {
+    margin-top: 1em;
+    width: 100%;
+}
+
+/* VERSION ESCRITORIO */
+/* Cambiamos el punto de ruptura a 850px en el footer para establecer dos modos: ancho y compacto,
+y que la informacion se visualice correctamente*/
+@media only screen and (min-width: 850px) {
+
+    /* Pie de página */
+    footer {
+        flex-direction: row;
+    }
+
+    /*Informacion del centro*/
+    footer>div:first-of-type {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nombre tel"
+            "gmail address";
+        align-items: center;
+        width: 40%;
+    }
+
+    /* Enlaces */
+    .enlaces {
+        text-align: center;
+        width: 60%;
+        margin-top: 1em;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    /*Enlaces de imagenes*/
+    .enlaces div {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    /*Enlace Junta de Castilla y Leon*/
+    .enlaces a:nth-of-type(1){
+        padding-right: 10%;
+    }
+
+    /*Copyright*/
+    footer small {
+        text-align: center;
+        margin-top: 0.5em;
+    }
+
+}
+
