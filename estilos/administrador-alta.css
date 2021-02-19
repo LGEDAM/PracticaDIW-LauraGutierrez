@@ -2,12 +2,10 @@
 .opciones li:nth-of-type(2) a {
     letter-spacing: 0.2em;
     /*Damos sombra al enlace*/
-    text-shadow: -1px -1px 2px var(--azul-oscuro), 
-                2px 2px 2px var(--azul-oscuro),
-                4px 4px 4px var(--azul-oscuro),
-                5px 5px 5px var(--azul-oscuro),
-                6px 6px 6px var(--azul-oscuro), 
-                7px 7px 7px var(--azul-oscuro);
+    text-shadow: -1px -1px 2px var(--azul-oscuro),
+        2px 2px 2px var(--azul-oscuro),
+        4px 4px 4px var(--azul-oscuro),
+        5px 5px 5px var(--azul-oscuro);
 }
 
 /*----------------------------CUERPO DE PAGINA--------------------------------*/
@@ -109,12 +107,12 @@ div .labelRadio:first-of-type {
 }
 
 /*Cursos*/
-#opcionesCursos{
+#opcionesCursos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: start;
-    margin:0.8em 0;
+    margin: 0.8em 0;
 }
 
 /*Nombre cursos*/
@@ -226,6 +224,7 @@ button {
     width: 250px;
     margin-bottom: 1.5em;
 }
+
 /*Botones hover*/
 button:hover {
     color: var(--ocre);
@@ -234,11 +233,10 @@ button:hover {
     transform: scale(1.1);
 }
 
-/*----------------------------------VERSION ESCRITORIO------------------------------------------*/
+/*---------------------------------------VERSION TABLET------------------------------------------*/
 @media only screen and (min-width: 650px) {
-
     main {
-        margin: 3em 12%;
+        margin: 3em 5%;
     }
 
     /*Titulo de pagina, tipo de usuario*/
@@ -271,14 +269,17 @@ button:hover {
         margin-right: 1em;
         width: 36%;
     }
-    ul li:nth-of-type(3){
+
+    ul li:nth-of-type(3) {
         width: 100%;
     }
+
     /*Input direccion*/
     #direccion {
         width: 74.4%;
     }
-    #nacion{
+
+    #nacion {
         width: 36%;
     }
 
@@ -286,7 +287,7 @@ button:hover {
     #opcionesCursos {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin:1em 2%;
+        margin: 1em 2%;
         grid-gap: 0.4em;
     }
 
@@ -294,7 +295,7 @@ button:hover {
     .modulo fieldset {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
-        
+
     }
 
     /*Botones*/
@@ -311,9 +312,9 @@ button:hover {
     }
 }
 
-/*--------------------VERSION TABLET (reducir el margen)----------------------*/
-@media only screen and (max-width: 850px) {
+/*---------------------------------------VERSION ESCRITORIO  (ampliar el margen)------------------------------------------*/
+@media only screen and (min-width: 850px) {
     main {
-        margin: 3em 5%;
+        margin: 3em 12%;
     }
 }

@@ -2,12 +2,10 @@
 .opciones li:nth-of-type(1) a {
     letter-spacing: 0.2em;
     /*Damos sombra al enlace*/
-    text-shadow: -1px -1px 2px var(--azul-oscuro), 
-                2px 2px 2px var(--azul-oscuro),
-                4px 4px 4px var(--azul-oscuro),
-                5px 5px 5px var(--azul-oscuro),
-                6px 6px 6px var(--azul-oscuro), 
-                7px 7px 7px var(--azul-oscuro);
+    text-shadow: -1px -1px 2px var(--azul-oscuro),
+        2px 2px 2px var(--azul-oscuro),
+        4px 4px 4px var(--azul-oscuro),
+        5px 5px 5px var(--azul-oscuro);
 }
 
 /*----------------------------CUERPO DE PAGINA--------------------------------*/
@@ -246,7 +244,7 @@ tr:hover .eliminar {
 @media only screen and (min-width: 650px) {
 
     main {
-        margin: 3em 12%;
+        margin: 3em 5%;
     }
 
     /*Titulo de pagina*/
@@ -316,7 +314,7 @@ tr:hover .eliminar {
     th:last-of-type {
         padding: 0 0.5em;
     }
-   
+
     tbody td {
         display: table-cell;
         padding: 0.3em 1% !important;
@@ -335,7 +333,7 @@ tr:hover .eliminar {
 
     /*Hover papelera e icono*/
     tbody tr:hover td:last-of-type {
-        transform: scale(1.2);    
+        transform: scale(1.2);
     }
 
     /*Icono tipo*/
@@ -369,7 +367,7 @@ tr:hover .eliminar {
     }
 
     /*Mostrar icono tipo y papelera*/
-    tr td:nth-child(1){
+    tr td:nth-child(1) {
         padding: 1em 0 !important;
         display: block;
     }
@@ -381,9 +379,9 @@ tr:hover .eliminar {
     }
 }
 
-/*--------------------VERSION TABLET (reducir el margen para ver la info de la tabla)----------------------*/
-@media only screen and (max-width: 850px) {
+/*------------------------------VERSION ESCRITORIO (ampliar el margen)----------------------*/
+@media only screen and (min-width: 850px) {
     main {
-        margin: 3em 5%;
+        margin: 3em 12%;
     }
 }

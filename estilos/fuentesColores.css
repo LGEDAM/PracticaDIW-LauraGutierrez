@@ -1,3 +1,4 @@
+/*Tipografias*/
 @font-face {
     font-family: "BreeSerif";
     src: url("../media/fuentes/BreeSerif.ttf");
@@ -6,11 +7,11 @@
     font-family: "Lato";
     src: url("../media/fuentes/Lato.ttf");
 }
+/*Variables colores*/
 :root{
     --azul-oscuro:#2f3d52;
     --azul:#4772b3;
     --azul-claro:#86abe3;
     --gris-claro:#e8e8e8;
-    /* --ocre:#b09155; */
     --ocre:#C1AB7B;
 }

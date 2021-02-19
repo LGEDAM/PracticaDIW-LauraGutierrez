@@ -164,7 +164,7 @@ form div input:not(:placeholder-shown)~svg {
 }
 
 /*-----------------------------------VERSION ESCRITORIO-----------------------------------*/
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 650px) {
     body {
         flex-direction: row;
         width: auto;

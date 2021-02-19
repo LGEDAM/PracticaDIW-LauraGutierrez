@@ -122,9 +122,7 @@ header nav li a {
     text-shadow: -1px -1px 2px var(--azul-oscuro), 
                 2px 2px 2px var(--azul-oscuro),
                 4px 4px 4px var(--azul-oscuro),
-                5px 5px 5px var(--azul-oscuro),
-                6px 6px 6px var(--azul-oscuro), 
-                7px 7px 7px var(--azul-oscuro);
+                5px 5px 5px var(--azul-oscuro);
 }
 
 /* Opcion - Dar de alta */
