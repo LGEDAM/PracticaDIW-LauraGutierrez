@@ -8,7 +8,6 @@ html {
 
 /*--------------------------------------LOGIN--------------------------------------------*/
 body {
-    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -175,7 +174,7 @@ form div input:not(:placeholder-shown)~svg {
         display: none;
     }
 
-    /*Lado izquierdo*/
+    /*Lado izquierdo - imagen fondo*/
     body>div:nth-of-type(1) {
         width: 150px;
         height: auto;
@@ -187,7 +186,7 @@ form div input:not(:placeholder-shown)~svg {
         box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.8);
     }
 
-    /*Lado izquierdo enace al inicio*/
+    /*Lado izquierdo enlace al inicio*/
     body>div:nth-of-type(1) a {
         position: absolute;
         top: 0;

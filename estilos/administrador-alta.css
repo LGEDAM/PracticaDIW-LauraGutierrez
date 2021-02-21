@@ -48,7 +48,9 @@ main li input {
     outline: none;
     border: 1px solid var(--azul-oscuro);
     height: 12%;
-    font: 400 0.9em "Lato";
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
     width: 100%;
     margin-right: 0;
     margin-bottom: 1em;
@@ -84,7 +86,9 @@ main li div {
     text-align: center;
     margin: 0;
     border: 1px solid var(--azul-oscuro);
-    font: 400 0.9em "Lato";
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
     display: flex;
     width: 99.5%;
     margin-bottom: 1em;

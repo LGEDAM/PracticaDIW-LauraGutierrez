@@ -140,7 +140,7 @@ main section img {
 footer {
     background-color: var(--azul-oscuro);
     color: var(--gris-claro);
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
     padding: 2em 10% 3em 10%;

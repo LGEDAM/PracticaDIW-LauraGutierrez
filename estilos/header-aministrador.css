@@ -108,7 +108,7 @@ header nav li a {
     min-height: 1.5em;
     margin: 0.1em 0;
     padding: 0.4em 0;
-    font-family: "BreeSerif", sans-serif;
+    font-family: "BreeSerif", serif;
     letter-spacing: 0.1em;
     font-size: 0.9em;
     border-bottom: none;
@@ -119,10 +119,10 @@ header nav li a {
 .opciones a:hover {
     letter-spacing: 0.2em;
     /*Damos sombra al enlace*/
-    text-shadow: -1px -1px 2px var(--azul-oscuro), 
-                2px 2px 2px var(--azul-oscuro),
-                4px 4px 4px var(--azul-oscuro),
-                5px 5px 5px var(--azul-oscuro);
+    text-shadow: -1px -1px 2px var(--azul-oscuro),
+        2px 2px 2px var(--azul-oscuro),
+        4px 4px 4px var(--azul-oscuro),
+        5px 5px 5px var(--azul-oscuro);
 }
 
 /* Opcion - Dar de alta */
