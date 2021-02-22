@@ -211,6 +211,13 @@ footer img {
         justify-content: flex-start;
     }
 
+    /*Navegacion*/
+    nav {
+        display: flex;
+        padding: 0 10%;
+        background-color: var(--azul-oscuro);
+    }
+
     /*Icono navegacion movil*/
     .navegacion-movil {
         display: none;
@@ -254,12 +261,7 @@ footer img {
         padding: 0.2em 10%;
     }
 
-    /*Navegacion*/
-    nav {
-        display: flex;
-        padding: 0 10%;
-        background-color: var(--azul-oscuro);
-    }
+
 
     /*Lista*/
     ul {

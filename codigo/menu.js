@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let mostrar = true;
 
-
 let mostrarOcultar = (e) => {
     let nav = document.getElementById("navegacion");
     let ul = document.getElementById("lista-menu");
@@ -34,9 +33,9 @@ function cambiarAncho() {
     let nav = document.getElementById("navegacion");
     let ul = document.getElementById("lista-menu");
     let li = document.getElementsByClassName("opcion");
+    
     if (window.innerWidth < 650) {
         nav.style.display = 'none';
-
     } else {
         nav.style.display = 'block';
         ul.style.flexDirection = 'row';
