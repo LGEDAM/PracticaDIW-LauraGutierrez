@@ -316,7 +316,7 @@ button:hover {
     }
 }
 
-/*---------------------------------------VERSION ESCRITORIO  (ampliar el margen)------------------------------------------*/
+/*-----------------------------VERSION ESCRITORIO  (ampliar el margen)------------------------------------------*/
 @media only screen and (min-width: 850px) {
     main {
         margin: 3em 12%;

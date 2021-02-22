@@ -240,7 +240,7 @@ tr:hover .eliminar {
     transform: scale(1.1);
 }
 
-/*-------------------------------VERSION ESCRITORIO------------------------------------------*/
+/*-------------------------------VERSION TABLET------------------------------------------*/
 @media only screen and (min-width: 650px) {
 
     main {
