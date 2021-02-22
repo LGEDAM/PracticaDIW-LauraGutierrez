@@ -8,9 +8,9 @@ class FooterPaginas extends HTMLElement {
         <!--Información centro-->
         <div>
             <p>C.I.F.P Laura I</p>
-            <p>Tel: 123456789</p>
+            <p>Tel: (+34)123456789</p>
             <p>cifplaura@gmail.com</p>
-            <address>Dirección: C/Luna</address>
+            <address>Dirección: C/España</address>
             
         </div>
         <!--Enlaces-->

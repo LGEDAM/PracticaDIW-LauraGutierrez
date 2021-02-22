@@ -34,7 +34,7 @@ class HeaderAdmin extends HTMLElement {
         <!-- Navegacion -->
         <nav>
             <ul>
-                <li><a href="../administrador-usuarios.html">ADMINISTRADOR</a></li>
+                <li><a href="administrador-usuarios.html">ADMINISTRADOR</a></li>
                 <div class="opciones">
                     <li><a href="administrador-usuarios.html">Usuarios</a></li>
                     <li><a href="administrador-alta.html">Dar Alta</a></li>
